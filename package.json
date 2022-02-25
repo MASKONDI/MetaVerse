@@ -20,7 +20,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "deploy":"gh-pages -d dist"
   },
   "repository": {
     "type": "git",
