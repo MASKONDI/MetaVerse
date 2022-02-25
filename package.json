@@ -1,0 +1,25 @@
+{
+  "name": "metaverse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "three.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "@nomiclabs/hardhat-etherscan": "^3.0.1",
+    "@nomiclabs/hardhat-waffle": "^2.0.2",
+    "ethers": "^5.5.4",
+    "express": "^4.17.3",
+    "fs": "0.0.1-security",
+    "gh-pages": "^3.2.3",
+    "hardhat": "^2.8.4",
+    "hardhat-ethers": "^1.0.1",
+    "hardhat-waffle": "0.0.1-security",
+    "http": "0.0.1-security",
+    "web3": "^1.7.0"
+  }
+}

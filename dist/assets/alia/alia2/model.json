@@ -1,0 +1,6 @@
+{
+   "pipeline" : "body_0.3",
+   "pipeline_subtype" : "female",
+   "remove_glasses" : false,
+   "remove_smile" : true
+}
