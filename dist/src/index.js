@@ -23,7 +23,7 @@ scene.add(light);
 const loader =new  GLTFLoader();
 console.log(loader);
 
-loader.load( '../dist/assets/ranbir/model.glb', function ( gltf ) {
+loader.load( './assets/ranbir/model.glb', function ( gltf ) {
     gltf.scene.scale.set(7,7,7);
     gltf.scene.position.set(1,0,8);
     function animate() {
@@ -67,50 +67,50 @@ loader.load( '../dist/assets/ranbir/model.glb', function ( gltf ) {
 	console.error( error );
 
 } );
-loader.load( '../dist/assets/alia/alia2/model.glb', function ( gltf ) {
-    gltf.scene.scale.set(7,7,7);
-    gltf.scene.position.set(3,0,4);
-    function animate() {
-       // gltf.scene.rotation.y += 0.01;
-        //gltf.scene.rotation.z += 0.01;
-         requestAnimationFrame( animate ); //w -forward
-         if(keyInput.isPressed(73)){
-            gltf.scene.position.z -=0.05;
-           // gltf.scene.rotation.y = -460;
+// loader.load( './assets/alia/alia2/model.glb', function ( gltf ) {
+//     gltf.scene.scale.set(7,7,7);
+//     gltf.scene.position.set(3,0,4);
+//     function animate() {
+//        // gltf.scene.rotation.y += 0.01;
+//         //gltf.scene.rotation.z += 0.01;
+//          requestAnimationFrame( animate ); //w -forward
+//          if(keyInput.isPressed(73)){
+//             gltf.scene.position.z -=0.05;
+//            // gltf.scene.rotation.y = -460;
            
-        }
-        if(keyInput.isPressed(75)){ //s --backword
-            //  gltf.scene.position.y -= 0.05;
+//         }
+//         if(keyInput.isPressed(75)){ //s --backword
+//             //  gltf.scene.position.y -= 0.05;
            
-            gltf.scene.position.z +=0.05;
-            gltf.scene.rotation.y +=0.1 ;
+//             gltf.scene.position.z +=0.05;
+//             gltf.scene.rotation.y +=0.1 ;
            
-        }
-        if(keyInput.isPressed(74)){  //a --left
-            //  gltf.scene.position.y -= 0.05;
+//         }
+//         if(keyInput.isPressed(74)){  //a --left
+//             //  gltf.scene.position.y -= 0.05;
              
-             gltf.scene.position.x -=0.05;
-             //gltf.scene.rotation.y = -360;
-        }
-        if(keyInput.isPressed(76)){  //d --right
-            //  gltf.scene.position.y += 0.05;
+//              gltf.scene.position.x -=0.05;
+//              //gltf.scene.rotation.y = -360;
+//         }
+//         if(keyInput.isPressed(76)){  //d --right
+//             //  gltf.scene.position.y += 0.05;
            
-            gltf.scene.position.x +=0.05;
-            //gltf.scene.rotation.y = 360;
+//             gltf.scene.position.x +=0.05;
+//             //gltf.scene.rotation.y = 360;
            
            
-        }
-        camera.lookAt(ground.position);
-        renderer.render( scene, camera );
-     }
+//         }
+//         camera.lookAt(ground.position);
+//         renderer.render( scene, camera );
+//      }
    
-	scene.add( gltf.scene );
-    animate();
-}, undefined, function ( error ) {
+// 	scene.add( gltf.scene );
+//     animate();
+// }, undefined, function ( error ) {
 
-	console.error( error );
+// 	console.error( error );
 
-} );
+// } );
 
 // loader.load( '../assets/head1.2/model.obj', function ( gltf ) {
 //     gltf.scene.scale.set(7,7,7);
